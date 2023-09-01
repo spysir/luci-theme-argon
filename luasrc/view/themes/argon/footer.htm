@@ -18,14 +18,10 @@
 
 <% local ver = require "luci.version" %>
 </div>
-<footer class="mobile-hide">
-	<div>
-		<a class="luci-link" href="https://github.com/openwrt/luci" target="_blank">Powered by <%= ver.luciname %> (<%= ver.luciversion %>)</a> /
-						<a href="https://github.com/jerrykuku/luci-theme-argon" target="_blank">ArgonTheme <%# vPKG_VERSION %></a> /
-						<%= ver.distversion %>
-		<ul class="breadcrumb pull-right" id="modemenu" style="display:none"></ul>
-	</div>
-</footer>
+
+	<footer class="mobile-hide" style="text-align:center">
+                   <a href="#">Compiled in $(TZ=UTC-8 date "+%Y.%m.%d")</a>
+                </footer>
 </div>
 </div>
 <script>
